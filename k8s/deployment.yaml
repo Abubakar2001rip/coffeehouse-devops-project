@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coffeehouse-deployment
+  labels:
+    app: coffeehouse
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: coffeehouse
+  template:
+    metadata:
+      labels:
+        app: coffeehouse
+    spec:
+      containers:
+        - name: coffeehouse
+          image: abubakar2001rip/coffeehouse-app:v1
+          ports:
+            - containerport: 8080
