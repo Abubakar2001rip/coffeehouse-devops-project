@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - BrewBean Coffee House</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">&#9749;</span>
+                <div class="logo-text">
+                    <div class="logo-name">BrewBean</div>
+                    <div class="logo-subtitle">COFFEE HOUSE</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="/cart" class="active">&#128722; Cart (2)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-container">
+        <div class="cart-header">
+            <h1>Your Cart</h1>
+        </div>
+
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Cappuccino" class="cart-item-image-real">
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">Cappuccino</div>
+                        <div class="cart-item-price">$3.50</div>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="qty-btn">-</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn">+</button>
+                        <span class="cart-item-total" style="margin-left: 20px; color: #2a2a2a; font-weight: bold;">$3.50</span>
+                        <span class="remove-btn" style="margin-left: 20px;">&#128465;</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://images.pexels.com/photos/32681655/pexels-photo-32681655.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Iced Latte" class="cart-item-image-real">
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">Iced Latte</div>
+                        <div class="cart-item-price">$4.25</div>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="qty-btn">-</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn">+</button>
+                        <span class="cart-item-total" style="margin-left: 20px; color: #2a2a2a; font-weight: bold;">$4.25</span>
+                        <span class="remove-btn" style="margin-left: 20px;">&#128465;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$7.75</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$7.75</span>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+                <a href="/menu" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 BrewBean Coffee House. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">f</a>
+            <a href="#">&#128247;</a>
+            <a href="#">X</a>
+        </div>
+    </footer>
+</body>
+</html>
