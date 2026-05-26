@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: coffeehouse-deployment
+  name: coffeehouse
   labels:
     app: coffeehouse
 spec:
@@ -18,4 +18,4 @@ spec:
         - name: coffeehouse
           image: abubakar2001rip/coffeehouse-app:v1
           ports:
-            - containerport: 8080
+            - containerPort: 8080
