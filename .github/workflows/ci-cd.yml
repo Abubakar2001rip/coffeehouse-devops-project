@@ -3,11 +3,11 @@ name: Springboot Java CI/CD
 on:
   push:
     branches:
-      - test
+      - main
 
   pull_request:
     branches:
-      - test
+      - main
 
 env:
   PROJECT_ID: qwiklabs-gcp-03-b27a8a882dda
@@ -115,7 +115,7 @@ jobs:
 
       - name: Deploy Kubernetes Manifests
         run: |
-          kubectl apply -f K8s/ \
+          kubectl apply -f k8s/ \
           -n $NAMESPACE
 
       - name: Update Deployment Image
