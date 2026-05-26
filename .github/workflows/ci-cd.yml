@@ -115,7 +115,8 @@ jobs:
 
       - name: Deploy Kubernetes Manifests
         run: |
-          kubectl apply -f K8s/ -n $NAMESPACE
+          kubectl apply -f K8s / 
+          -n $NAMESPACE
 
       - name: Update Deployment Image
         run: |
