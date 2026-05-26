@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: coffeehouse-deployment
+  name: coffeehouse
   labels:
     app: coffeehouse
 spec:
