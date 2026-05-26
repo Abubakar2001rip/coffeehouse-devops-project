@@ -10,7 +10,7 @@ on:
       - main
 
 env:
-  PROJECT_ID: qwiklabs-gcp-03-b27a8a882dda
+  PROJECT_ID: qwiklabs-gcp-03-cfd1580d5d98
   REGION: us-east1
   REPOSITORY: coffeehouse-repo
   IMAGE: coffeehouse
