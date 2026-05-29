@@ -57,12 +57,16 @@ It showcases how to:
 ## 🖥️ Demo
 ### 📸 Screenshots
 
-Add your screenshots below:
 
-- Application running locally
 - Docker container logs
+ <img width="1777" height="541" alt="Docker logs" src="https://github.com/user-attachments/assets/0527f21e-40fd-4260-98c5-0d3508fba787" />
+
 - Kubernetes pods/services
+ <img width="1132" height="290" alt="K8s pods and service" src="https://github.com/user-attachments/assets/786828bd-03ca-472b-be97-71e23fc5f254" />
+
 - GKE Autopilot dashboard
+ <img width="1848" height="890" alt="Cluster dashboard" src="https://github.com/user-attachments/assets/2c8ec6e3-7e80-417b-a0c7-8e6fd284ef3b" />
+
 
 
 
@@ -74,7 +78,7 @@ Add your demo video link (YouTube / Loom)
 
 - Building the Spring Boot application
 - Containerizing with Docker
-- Pushing the image to the container registry
+- Pushing the image to the artifact registry
 - Deploying to GKE Autopilot
 - Accessing the live Kubernetes service
 
