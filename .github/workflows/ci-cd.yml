@@ -3,15 +3,15 @@ name: Springboot Java CI/CD
 on:
   push:
     branches:
-      - test
+      - main
 
   pull_request:
     branches:
-      - test
+      - main
 
 env:
-  PROJECT_ID: qwiklabs-gcp-03-cfd1580d5d98
-  REGION: us-east1
+  PROJECT_ID: qwiklabs-gcp-03-48555853216b
+  REGION: us-east4
   REPOSITORY: coffeehouse-repo
   IMAGE: coffeehouse
   CLUSTER: autopilot-cluster
