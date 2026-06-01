@@ -70,7 +70,7 @@ It showcases how to:
 
 
 
-### 🎥 Video Walkthrough
+
 
 <h2>🎥 Video Walkthrough</h2>
 
