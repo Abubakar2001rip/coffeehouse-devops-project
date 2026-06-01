@@ -72,7 +72,11 @@ It showcases how to:
 
 ### 🎥 Video Walkthrough
 
-Add your demo video link (YouTube / Loom)
+<h2>🎥 Video Walkthrough</h2>
+
+<a href="https://youtu.be/82XA0Flm9to">
+  <img src="https://img.youtube.com/vi/82XA0Flm9to/hqdefault.jpg" width="450">
+</a>
 
 ### Demo Covers
 
