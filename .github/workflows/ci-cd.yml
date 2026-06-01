@@ -10,11 +10,11 @@ on:
       - main
 
 env:
-  PROJECT_ID: [Your-Project-ID]
-  REGION: [Your-Region]
+  PROJECT_ID: [Your-Project-ID]        # Update to your actual Project ID on GCP
+  REGION: [Your-Region]                # Update to your actual Region on GCP
   REPOSITORY: coffeehouse-repo
   IMAGE: coffeehouse
-  CLUSTER:  [Your-GKE-Cluster-Name]
+  CLUSTER:  [Your-GKE-Cluster-Name]    # Update to your actual name of your GKE Cluster
   NAMESPACE: coffeehouse
 
 jobs:
@@ -58,7 +58,7 @@ jobs:
       - name: Authenticate to GCP
         uses: google-github-actions/auth@v3
         with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          credentials_json: ${{ secrets.GCP_SA_KEY }}         # Create Secrets named GCP_SA_KEY and store the required contents
 
       - name: Setup gcloud
         uses: google-github-actions/setup-gcloud@v2
@@ -93,7 +93,7 @@ jobs:
       - name: Authenticate to GCP
         uses: google-github-actions/auth@v3
         with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          credentials_json: ${{ secrets.GCP_SA_KEY }}      # Create Secrets named GCP_SA_KEY and store the required contents
 
       - name: Setup gcloud
         uses: google-github-actions/setup-gcloud@v2
